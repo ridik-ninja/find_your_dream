@@ -1,0 +1,136 @@
+body {
+  /* background-color: #0d1216; */
+  background-color: #212529;
+  color: white;
+}
+
+.navbar {
+  background-color: #0d1216;
+}
+
+.multicolortext {
+  background-image: linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 29px;
+}
+
+a {
+  text-decoration: none;
+  color: #040404;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+.item {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  transform: translate(0);
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+  transition: 1s;
+}
+.item:hover {
+  transform: scale(0.98);
+  outline: 1.5px solid green;
+}
+.item::before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 8px;
+  top: -20px;
+  bottom: -20px;
+  left: -140px;
+  transform: rotate(-16deg);
+  filter: blur(6px);
+}
+.item:hover::before {
+  left: calc(120% + 16px);
+  transition: 1.2s;
+}
+.text {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 20px;
+}
+
+.text-cheese {
+  background-image: linear-gradient(white, #212529);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 48px;
+}
+.text-ferrari {
+  background-image: linear-gradient(to left, green, #212529, red);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0.1px black;
+  font-size: 48px;
+}
+.text-chevrolet {
+  background-image: linear-gradient(blue, white, grey);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 0.1px black;
+  font-size: 48px;
+}
+
+.text-aston {
+  background-image: linear-gradient(#212529, #212529, #212529, lime);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 48px;
+}
+
+.footer {
+  background-color: #0d1216;
+}
+@media screen and (min-width: 201px) and (max-width: 576px) {
+  .text-cheese {
+    padding-top: 0;
+    font-size: 34px;
+  }
+  .btnNone {
+    display: none;
+  }
+  .btn {
+    white-space: nowrap;
+  }
+  .text-chevrolet {
+    padding-top: 0;
+    font-size: 34px;
+  }
+  .text-aston {
+    padding-top: 0;
+    font-size: 34px;
+  }
+  .text-ferrari {
+    padding-top: 0;
+    font-size: 34px;
+  }
+  .multicolortext {
+    font-size: 24px;
+    margin: 15px;
+  }
+}
