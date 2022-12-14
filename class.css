@@ -17,6 +17,14 @@ body {
   font-size: 29px;
 }
 
+.multicolornav {
+  background-image: linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 a {
   text-decoration: none;
   color: #040404;
